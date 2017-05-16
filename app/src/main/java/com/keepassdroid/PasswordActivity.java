@@ -384,7 +384,8 @@ public class PasswordActivity extends LockingActivity {
                 }
 
             } else {
-                mDbUri = UriUtil.parseDefaultFile(i.getStringExtra(KEY_FILENAME));
+//                mDbUri = UriUtil.parseDefaultFile(i.getStringExtra(KEY_FILENAME));
+                mDbUri = i.getData();
                 mKeyUri = UriUtil.parseDefaultFile(i.getStringExtra(KEY_KEYFILE));
                 password = i.getStringExtra(KEY_PASSWORD);
                 launch_immediately = i.getBooleanExtra(KEY_LAUNCH_IMMEDIATELY, false);
